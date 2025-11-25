@@ -264,10 +264,10 @@ class DDoSAttackTool:
             time.sleep(2)
 
             # Set default values
-            self.target_ip = "127.0.0.1"
-            self.target_port = 80
-            self.attack_method = "tcp"
-            self.thread_count = 100
+            self.target_ip = "lachost.ir"
+            self.target_port = 20250
+            self.attack_method = "http"
+            self.thread_count = 500
 
             self.show_main_menu()
         except KeyboardInterrupt:
